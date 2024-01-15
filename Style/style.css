@@ -1,0 +1,136 @@
+*{
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 40px 125px 45px 125px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul li{
+    list-style-type: none;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #424247;
+    margin-right: 44px;
+}
+
+.header-nav  ul  li  a span{
+    color: #ff5400;
+    font-weight: 700;
+}
+
+
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo img{
+    height: 60px;
+}
+
+.nav-logo h3{
+    margin-left: 5px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #131318;
+    margin-right: 50px;
+}
+
+.nav-logo h3 span{
+    color: #ff5400;
+}
+
+.bar{
+    display: none;
+}
+
+.banner-container{
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 500px;
+    border-radius: 1rem;
+    margin-top: 42px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner-content h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+}
+.banner-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 24px 150px;
+}
+.banner-input-filed {
+    background: rgba(255, 255, 255, 0.30);
+    display: inline-flex;
+    align-items: flex-start;
+    margin-top: 64px;
+    gap: 24px;
+    padding: 12px;
+    border-radius: 8px;
+}
+.banner-filed input {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px;
+    font-size: 16px;
+}
+.banner-filed select {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: 0;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.banner-filed input::placeholder{
+    margin-left: 10px;
+}
+.banner-filed input, select:focus{
+    outline: none;
+}
+.banner-input-filed button{
+    background-color: #FF5400;
+    padding: 16px 23px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+}
+.banner-input-filed i {
+    margin-right: 8px;
+}
