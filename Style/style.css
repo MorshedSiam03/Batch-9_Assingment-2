@@ -148,10 +148,10 @@ header {
     text-align: justify;
 }
 .popular-content h1{
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 800;
     color: #131318;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 .popular-content p{
     font-size: 16px;
@@ -159,22 +159,26 @@ header {
     color: rgba(19, 19, 24, 0.70);
     margin-bottom: 24px;
 }
+
+.popular-point ul li{
+    margin: 20px 10px 20px 10px;
+}
 .popular-content button {
     background-color: #FF5400;
     padding: 16px 20px;
     color: #fff;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
     border: 0;
     border-radius: 8px;
     letter-spacing: 2px;
 }
 
 .popular-point{
-    
     padding: 0px 30px;
 }
 /* end the popular section css and start the destination css */
+
 .destination-container{
     margin: 0px 127px 100px 127px;
 }
@@ -260,10 +264,13 @@ header {
     align-items: center;
     margin-top: 48px;
 }
+
 .choose-box h1{
     font-size: 24px;
     font-weight: 800;
     color: #131318;
+    margin-top: 10px;
+    padding:16px 0px;
 }
 .choose-box p{
     font-size: 16px;
@@ -287,14 +294,20 @@ header {
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
-
+    width: 573px;
+    margin: 0 auto;
+    grid-column: span 2;
+    text-align: center; 
+    margin-bottom: 50px;
 }
 
+    /* end css choose section css and start the deals & discount section css */
 .deals-container{
-    margin: 100px 127px 100px 127px;
+    margin: 50px 127px 30px 127px;
 }
 .deals-content{
     text-align: center;
+    margin-bottom: 50px;
 }
 .deals-content h1{
     font-size: 40px;
@@ -308,7 +321,7 @@ header {
     margin: 20px 0px 20px 0px;
 }
 .first-deals-container{
-    background-image: url('../Images/Rectangle\ 12.png');
+    background-image: url('../Images/Group\ 39.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -396,7 +409,158 @@ header {
     margin-bottom: 56px;
     margin-left: 56px;
 }
+.btn{
+    width: 174px;
+    margin: 0 auto;
+}
+.btn button {
+    background-color: #FF5400;
+    border-radius: 8px;
+     width: 174px;
+    height: 52px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+.video{
+    border-radius: 20px;
 
+}
+/* end the place css and start the newsletter css */
+.newsletter-container{
+    margin: 100px 127px 100px 127px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter-form{
+    padding: 20px;
+    height: 410px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    margin-right: 20px;
+}
+.newsletter-content{
+    margin-top: 25px;
+}
+.newsletter-content h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: #131318;
+}
+.newsletter-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5A5A5D;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.newsletter-filed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.newsletter-filed input {
+    margin-bottom: 16px;
+    width: 393px;
+    height: 52px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+.newsletter-filed input:focus{
+    outline: none;
+    
+}
+.newsletter-filed input[type="submit"]{
+    background-color: #FF5400;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.newsletter-img{
+    background-image: url('../Images/Rectangle\ 8\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 422px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 16px;
+}
+.newsletter-img-content{
+    background-color: #FF5400;
+    font-weight: 800;
+    width: 260px;
+    height: 90px;
+    transform: rotate(-24deg);
+    text-align: center;
+    color: #fff;
+    margin-bottom: 48px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    padding: 70px;
+}
+.footer-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5A5A5D;
+    margin: 15px 250px;
+}
+.footer-icons{
+    margin-top: 33px;
+}
+.footer-icons a i {
+    margin-right: 23px;
+    text-decoration: none;
+    color: #424247;
+    margin-bottom: 50px;
+}
+hr{
+    width: 900px;
+    height: 1px;
+    margin: 0 auto;
+}
+.footer-rights{
+    margin-top: 50px;
+}
+/* Extra section css */
+.about-us{
+    margin: 100px 127px 100px 127px;
+    width: 573px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-us h1{
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #131318;
+    margin-top: 20px;
+}
+.about-us button {
+    background-color: #FF5400;
+    padding: 16px 23px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+}
+/*  */
 /* Responsive for mobile css start from here */
 @media screen and (max-width: 600px) {
     header {
@@ -500,6 +664,7 @@ header {
     .choose-box p{
         font-size: 14px;
     }
+    
     /* end css choose section css and start the deals & discount section css */
     .deals-container{
         margin: 20px;
@@ -508,16 +673,81 @@ header {
         font-size: 20px;
     }
     .deal-main-container{
-        width: 303px;
-        height: 297px;
-        border-radius: 16px;
-        border: 2px solid #FFF;
-        background: rgba(255, 255, 255, 0.80);
-        backdrop-filter: blur(2.5px);
+        width: 275px;
+        height: 370px;
         float: right;
-        margin-top: 56px;
-        margin-bottom: 56px;
-        margin-right: 56px;
+        margin-top: 95px;
+        margin-right: 30px;
     }
-
+    .second-main-container{
+        width: 275px;
+        height: 370px;
+        float: right;
+        margin-top: 95px;
+        margin-right: 30px;
+    }
+    .deals-details{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-content{
+        margin: 16px;
+    }
+    .video{
+        width: 335px;
+        height: 200px;
+        margin-top: 24px;
+    }
+    .popular-content h1{
+        font-size: 20px;
+    }
+    /* end the css */
+    /* newsletter css */
+    .newsletter-container{
+        margin: 20px;
+        flex-direction: column;
+    }
+    .newsletter-form {
+        height: 425px;
+        border-radius: 16px;
+        border: 1px solid #FF5400;
+    }
+    .newsletter-filed input {
+        margin-bottom: 16px;
+        width: 309px;
+        height: 52px;
+        border-radius: 8px;
+        background: rgba(19, 19, 24, 0.05);
+        border: 0;
+    }
+    .newsletter-img{
+        margin-top: 40px;
+    }
+    footer{
+        margin: 100px 20px 20px 20px;
+    }
+    hr{
+        width: 335px;
+    }
+ 
+    .box-3 {
+        width: 335px;
+        margin: 0;
+        grid-column: auto;
+        text-align: left;
+    }
+    .about-us{
+        margin: 100px 20px 100px 20px;
+        width: 302px;
+        margin: 0 auto;
+    }
+    .about-us h1{
+        font-size: 20px;
+    }
+    .about-us button {
+        margin-top: 20px;
+    }
 }
