@@ -130,6 +130,7 @@ header {
     font-weight: 700;
     border: 0;
 }
+
 .banner-input-filed i {
     margin-right: 8px;
 }
@@ -159,7 +160,6 @@ header {
     color: rgba(19, 19, 24, 0.70);
     margin-bottom: 24px;
 }
-
 .popular-point ul li{
     margin: 20px 10px 20px 10px;
 }
@@ -233,7 +233,7 @@ header {
     gap: 24px;
 }
 .destination-last-img{
-    width: 673px !important;
+    width: 673px;
 }
 .choose-container{
     margin: 0px 127px 0px 127px;
@@ -421,11 +421,6 @@ header {
     border: 0;
     cursor: pointer;
 }
-.video{
-    margin: 0;
-    padding: 0;
-
-}
 
 .popular-collection-main-container{
     margin: 0px 120px 100px 120px;
@@ -467,6 +462,7 @@ header {
     color: #000000;
     margin-bottom: 20px;
     padding-left: 10px;
+    
 }
 .popular-collection-card img{
     width: 100%;
@@ -476,6 +472,7 @@ header {
     font-weight: 800;
     color: #18191F;
     padding-left: 10px;
+    margin-top: 10px;
 }
 .popular-collection-card p{
     font-size: 12px;
@@ -503,14 +500,6 @@ header {
     letter-spacing: 0.252px;
     padding-left: 10px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -625,7 +614,9 @@ hr{
 
 
 
-/* Mobile View */
+/*========================= 
+         Mobile View 
+  =========================*/
 
 @media screen and (max-width: 600px) {
     header {
@@ -723,7 +714,7 @@ hr{
         grid-template-columns: repeat(1,1fr);
     }
     .destination-last-img{
-        width: 100% !important;
+        width: 100%;
     }
     .choose-container{
         margin: 20px;
@@ -775,9 +766,10 @@ hr{
     }
     .deals-details{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin: 20px;
+        grid-template-columns: repeat(1,1fr);
+        margin: 14px;
         justify-content: center;
+        gap: 10px;
         
     }
     .bottom-content{
@@ -792,14 +784,20 @@ hr{
         font-size: 24px;
     }
 
-    .video{
-        
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .video {
+        position: relative;
+    padding-bottom: 100%; /* 16:9 aspect ratio */
+    padding-top: 30px; /* Add any additional spacing you want */
+    height: 0;
+    margin-right: 60%;
+    overflow: hidden;
         
     }
 
     
+
+    
+
 
     .popular-content h1{
         font-size: 24px;
