@@ -787,11 +787,12 @@ hr{
         
     }
 
-    .popular-collection-main-card h1{
-        font-size: 12px;
+    .popular-collection-main-container h1{
+        font-size: 24px;
+        margin: 0;
     }
 
-.popular-collection-card{
+    .popular-collection-container{
     grid-template-columns: repeat(1,1fr);
 }
    
