@@ -177,7 +177,6 @@ header {
 .popular-point{
     padding: 0px 30px;
 }
-/* end the popular section css and start the destination css */
 
 .destination-container{
     margin: 0px 127px 100px 127px;
@@ -236,7 +235,6 @@ header {
 .destination-last-img{
     width: 673px !important;
 }
-/* end here the destination css and start the why choose us section css*/
 .choose-container{
     margin: 0px 127px 0px 127px;
 }
@@ -301,7 +299,6 @@ header {
     margin-bottom: 50px;
 }
 
-    /* end css choose section css and start the deals & discount section css */
 .deals-container{
     margin: 50px 127px 30px 127px;
 }
@@ -505,7 +502,6 @@ header {
     letter-spacing: 0.252px;
     padding-left: 10px;
 }
-/* end popular css */
 
 
 
@@ -517,7 +513,6 @@ header {
 
 
 
-/* end the place css and start the newsletter css */
 .newsletter-container{
     margin: 100px 127px 100px 127px;
     display: flex;
@@ -626,35 +621,11 @@ hr{
 .footer-rights{
     margin-top: 50px;
 }
-/* Extra section css */
-.about-us{
-    margin: 100px 127px 100px 127px;
-    width: 573px;
-    margin: 0 auto;
-    text-align: center;
-}
-.about-us h1{
-    margin-bottom: 24px;
-    font-size: 40px;
-    font-weight: 700;
-    color: #131318;
-    margin-top: 20px;
-}
-.about-us button {
-    background-color: #FF5400;
-    padding: 16px 23px;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    border: 0;
-}
-/*  */
 
 
 
+/* Mobile View */
 
-/* Responsive for mobile css start from here */
 @media screen and (max-width: 600px) {
     header {
         margin: 20px 20px 20px 20px;
@@ -662,26 +633,34 @@ hr{
     nav{
         display: none;
     }
-    .bars {
+    .bar{
         display: block;
         text-decoration: none;
         color: #424247;
         width: 25px;
         height: 24px;
+        margin-left: -10px;
     }
-    .nav-logo h1{
-        font-size: 21px;
+    .nav-logo h3{
+        font-size: 26px;
     }
-    /* nav css end from  here and banner css start from here */
     .banner-content{
         margin-top: 25px;
     }
+    .banner-container{
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
     .banner-content h1{
-        font-size: 22px;
+        margin-top: 30px;
+        font-size: 28px;
+        .banner-filed input, select {
+            width: 287px;
+        }
     }
     .banner-content p{
         width: 304px;
-        margin: 0 auto;
+        margin: 0px;
     }
     .banner-input-filed {
         flex-direction: column;
@@ -690,15 +669,19 @@ hr{
         background: rgba(255, 255, 255, 0.30);
         padding: 12px;
         border-radius: 8px;
+        margin-top: 15px;
+
     }
-    .banner-filed input, select {
+    .banner-filed input {
+        width: 287px;
+    }
+    .banner-filed select {
         width: 287px;
     }
     .banner-input-filed button{
         width: 287px;
         text-align: center;
     }
-    /* banner css end from here and start the popular tours section */
 
     .popular-container{
         margin: 24px 20px 20px 20px;
@@ -706,10 +689,13 @@ hr{
         justify-content: space-between;
         align-items: center;
     }
+    .popular-content h1{
+       font-size: 32px;
+
+    }
     .popular-container img{
         margin-top: 24px;
     }
-    /* end the popular section css and start destination css */
     .destination-container{
         margin: 20px 20px 20px 20px;
     }
@@ -737,7 +723,6 @@ hr{
     .destination-last-img{
         width: 100% !important;
     }
-    /* end here destination css and start the why choose us section css */
     .choose-container{
         margin: 20px;
     }
@@ -751,6 +736,12 @@ hr{
     .choose-box-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .box-3 {
+        width: 350px;
+        margin: 0;
+        grid-column: auto;
+        text-align: left;
+    }
     .choose-box h1{
         font-size: 20px;
     }
@@ -758,9 +749,8 @@ hr{
         font-size: 14px;
     }
     
-    /* end css choose section css and start the deals & discount section css */
     .deals-container{
-        margin: 20px;
+        margin: 18px;
     }
     .deals-content h1{
         font-size: 20px;
@@ -784,21 +774,27 @@ hr{
         grid-template-columns: repeat(2,1fr);
         margin: 20px;
         justify-content: center;
-        align-items: center;
+        
     }
     .bottom-content{
-        margin: 16px;
+        margin: 10px;
     }
     .video{
-        width: 335px;
-        height: 200px;
+        width: 240px;
+        height: 135px;
         margin-top: 24px;
+        margin-left: -50px;
+        
     }
-    .popular-content h1{
-        font-size: 20px;
+
+    .popular-collection-main-card h1{
+        font-size: 12px;
     }
-    /* end the css */
-    /* newsletter css */
+
+.popular-collection-card{
+    grid-template-columns: repeat(1,1fr);
+}
+   
     .newsletter-container{
         margin: 20px;
         flex-direction: column;
@@ -819,28 +815,18 @@ hr{
     .newsletter-img{
         margin-top: 40px;
     }
-    footer{
-        margin: 100px 20px 20px 20px;
+  
+    footer .nav-logo{
+        justify-content: center;
+    }
+    .footer-subtitle{
+        text-align: center;
+        margin-left: 0;
     }
     hr{
-        width: 335px;
+        width: 200px;
     }
  
-    .box-3 {
-        width: 335px;
-        margin: 0;
-        grid-column: auto;
-        text-align: left;
-    }
-    .about-us{
-        margin: 100px 20px 100px 20px;
-        width: 302px;
-        margin: 0 auto;
-    }
-    .about-us h1{
-        font-size: 20px;
-    }
-    .about-us button {
-        margin-top: 20px;
-    }
+    
+    
 }
