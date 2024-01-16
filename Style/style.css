@@ -422,7 +422,8 @@ header {
     cursor: pointer;
 }
 .video{
-    border-radius: 20px;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -706,12 +707,13 @@ hr{
     }
     .destination-content{
         width: 309px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .destination-content h1{
-        font-size: 20px;
+        font-size: 24px;
     }
     .destination-content p{
+        margin-top: 5px;
         font-size: 14px;
     }
     .second-img{
@@ -727,9 +729,11 @@ hr{
         margin: 20px;
     }
     .choose-content h1{
-        font-size: 20px;
+        margin-top: 40px;
+        font-size: 24px;
     }
     .choose-content p{
+        margin-top: -15px;
         font-size: 14px;
         width: 309px;
     }
@@ -737,7 +741,7 @@ hr{
         grid-template-columns: repeat(1,1fr);
     }
     .box-3 {
-        width: 350px;
+        width: 100%;
         margin: 0;
         grid-column: auto;
         text-align: left;
@@ -779,39 +783,57 @@ hr{
     .bottom-content{
         margin: 10px;
     }
-    .video{
-        width: 240px;
-        height: 135px;
-        margin-top: 24px;
-        margin-left: -50px;
-        
+
+    .popular-container{
+        display: flex;
     }
 
     .popular-content h1{
         font-size: 24px;
     }
 
-    .popular-collection-main-container h1{
+    .video{
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    
+
+    .popular-content h1{
         font-size: 24px;
-        margin: 0;
+    }
+
+    .popular-collection-main-container h1{
+        font-size: 28px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .popular-collection-main-container{
+        margin: 50px 20px;
     }
 
     .popular-collection-container{
     grid-template-columns: repeat(1,1fr);
 }
-   
+   .popular-collection-card{
+    width: 100%;
+   }
     .newsletter-container{
         margin: 20px;
         flex-direction: column;
     }
     .newsletter-form {
+        width: 100%;
         height: 425px;
         border-radius: 16px;
         border: 1px solid #FF5400;
     }
     .newsletter-filed input {
         margin-bottom: 16px;
-        width: 309px;
+        width: 100%;
         height: 52px;
         border-radius: 8px;
         background: rgba(19, 19, 24, 0.05);
@@ -822,11 +844,12 @@ hr{
     }
   
     footer .nav-logo{
-        justify-content: center;
+        margin-left: 30px;
     }
     .footer-subtitle{
         text-align: center;
-        margin-left: 0;
+        margin: 0;
+        justify-content: center;
     }
     hr{
         width: 200px;
