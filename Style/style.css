@@ -18,7 +18,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
+
 
 .header-nav ul{
     display: flex;
@@ -37,6 +39,13 @@ header {
     color: #424247;
     margin-right: 44px;
 }
+
+.header-nav ul li a:hover{
+    color: #ff5400;
+}
+
+
+
 
 .header-nav  ul  li  a span{
     color: #ff5400;
@@ -129,7 +138,19 @@ header {
     font-size: 16px;
     font-weight: 700;
     border: 0;
+    cursor: pointer;
 }
+
+.banner-input-filed button:hover{
+    background-color: #FF5400;
+    padding: 16px 23px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+}
+
 
 .banner-input-filed i {
     margin-right: 8px;
@@ -137,8 +158,9 @@ header {
 
 .popular-container{
     margin: 100px 127px 100px 127px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
 .popular-container img{
@@ -172,6 +194,18 @@ header {
     border: 0;
     border-radius: 8px;
     letter-spacing: 2px;
+}
+
+
+
+.popular-content button:hover {
+    background-color: #ff5400;
+    padding: 16px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 8px;
 }
 
 .popular-point{
@@ -453,7 +487,22 @@ header {
     padding-bottom: 30px;
     padding-left: 1px;
     box-shadow: 3px 3px 5px rgba(218, 215, 215, 0.5);
+    
 }
+
+.popular-collection-card:hover{
+
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(185, 224, 234, 0.05);
+    display: grid;
+    padding-bottom: 30px;
+    padding-left: 1px;
+    width: 103%;
+    height: 103;
+    
+}
+
 
 
 .popular-collection-main-container h1{
@@ -574,11 +623,21 @@ header {
 }
 .newsletter-filed input[type="submit"]{
     background-color: #FF5400;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
 }
+
+.newsletter-filed input[type="submit"]:hover{
+    background-color: red;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+
 .newsletter-img{
     background-image: url('../Images/Rectangle\ 8\ \(1\).png');
     background-repeat: no-repeat;
@@ -606,6 +665,7 @@ header {
     border-radius: 12px;
 }
 
+
 footer{
     background: rgba(19, 19, 24, 0.05);
     text-align: center;
@@ -625,6 +685,7 @@ footer{
     text-decoration: none;
     color: #424247;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 hr{
     width: 900px;
@@ -633,6 +694,10 @@ hr{
 }
 .footer-rights{
     margin-top: 50px;
+}
+
+.footer-rights:hover{
+    color: #ff5400;
 }
 
 
