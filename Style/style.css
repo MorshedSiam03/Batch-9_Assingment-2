@@ -502,6 +502,29 @@ header {
 }
 
 
+.video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
 
 .newsletter-container{
     margin: 100px 127px 100px 127px;
@@ -783,21 +806,6 @@ hr{
     .popular-content h1{
         font-size: 24px;
     }
-
-    .video {
-        position: relative;
-    padding-bottom: 100%; /* 16:9 aspect ratio */
-    padding-top: 30px; /* Add any additional spacing you want */
-    height: 0;
-    margin-right: 60%;
-    overflow: hidden;
-        
-    }
-
-    
-
-    
-
 
     .popular-content h1{
         font-size: 24px;
